@@ -37,6 +37,7 @@ app.command("/wallipheus-cat", async ({ command, ack, respond }) => {
         const response = await axios.get("https://catfact.ninja/fact");
             await client.chat.postMessage({text: `Cat Fact: ${response.data.fact}`}) ;
         }   catch(err) {
+            console.log(err);
             await respond({text: `Failed to fetch a cat fact`});
         };
 });
