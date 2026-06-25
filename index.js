@@ -31,7 +31,7 @@ app.command("/wallipheus-greet", async ({ command, ack, respond }) => {
         text: `${greetings[Math.floor(Math.random() * greetings.length)]}`
     });
 });
-app.command("/wallipheus-cat", async ({ command, ack, respond }) => {
+app.command("/wallipheus-cat", async ({ command, ack, respond, client }) => {
     await ack ();
     try {
         const response = await axios.get("https://catfact.ninja/fact");
