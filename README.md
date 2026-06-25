@@ -6,7 +6,7 @@ it includes 5 commands:
 - /wallipheus-remind: reminds you after x amount of minutes of a specific message that you input.
 - /wallipheus-daily: The Slack app has a build in daily reminder at 9am, this command lets me (Wally) cange that reainder's message.
 
-
+Wallipheus also welcomes new members autmatically.
 
 
 
